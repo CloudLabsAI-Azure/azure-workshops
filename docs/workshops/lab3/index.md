@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/3-aks-lab.js"
-
 # Lab 3: Azure Kubernetes Observability with Dynatrace
 
 ## 3.1 Intro

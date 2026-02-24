@@ -27,15 +27,15 @@ In the code repo you cloned, there is a simple UNIX shell script that prompts fo
     ./input-credentials.sh
     ```
    1. Enter in the approprite values for the three inputs at the prompt
-     ```
-      ==================================================================
-      Please enter your Dynatrace credentials as requested below:
-      Press <enter> to keep the current value
-      ===================================================================
-      Dynatrace Base URL              (current: ) :
-      Dynatrace Access API Token      (current: ) :      
-      ===================================================================
-     ```
+        ```
+        ==================================================================
+        Please enter your Dynatrace credentials as requested below:
+        Press <enter> to keep the current value
+        ===================================================================
+        Dynatrace Base URL              (current: ) :
+        Dynatrace Access API Token      (current: ) :      
+        ===================================================================
+        ```
    1. Confirm all of the inputs are correct.
     ??? info
         📓 There are some derived values the script generated based on your input.

@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/cleanup.js"
-
 # Lab 6: Cleanup & Reminder
 
 ## 6.1 Workshop Complete

@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/4-dashboards-notebooks-lab.js"
-
 # Lab 4: Dashboards & Notebooks
 
 ## 4.1 Intro

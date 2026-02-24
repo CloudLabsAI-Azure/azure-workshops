@@ -23,12 +23,12 @@ Dynatrace Intelligence enables you to forecast utilization of cloud resources an
     - Click **+ Add section** and select **DQL**
     - Copy and paste the following query to analyze CPU usage:
 
-    ```dql title="Forecast CPU usage for Azure VMs"
-    timeseries usage = avg(dt.host.cpu.user), by:{dt.entity.host}
-    | lookup [fetch dt.entity.host | fields id, entity.name, cloudType], sourceField:dt.entity.host, lookupField:id, prefix:"host."
-    | filter host.cloudType == "AZURE"
-    | fieldsRemove host.cloudType, dt.entity.host
-    ```
+        ```dql title="Forecast CPU usage for Azure VMs"
+        timeseries usage = avg(dt.host.cpu.user), by:{dt.entity.host}
+        | lookup [fetch dt.entity.host | fields id, entity.name, cloudType], sourceField:dt.entity.host, lookupField:id, prefix:"host."
+        | filter host.cloudType == "AZURE"
+        | fieldsRemove host.cloudType, dt.entity.host
+        ```
 
     - Click **Run** to see the current CPU utilization for your Azure VMs
 
@@ -41,7 +41,7 @@ Dynatrace Intelligence enables you to forecast utilization of cloud resources an
         - Accept the defaults that are in there for data points to predict and forecast offset
     - The chart will now display predicted values as a dashed line extending beyond your current data
 
-    ![image](img/lab2-forecasting-notebook.png)
+        ![image](img/lab2-forecasting-notebook.png)
 
     
     !!! tip "Dynatrace Intelligence Forecasting"

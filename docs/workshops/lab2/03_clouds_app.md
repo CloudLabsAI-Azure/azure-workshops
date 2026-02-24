@@ -63,7 +63,7 @@ For more details, see the <a href="https://docs.dynatrace.com/docs/platform-modu
         - Disk configurations
         - Tags and metadata
 
-        ![image](img/lab3-cloudapps-configuration.png)
+            ![image](img/lab3-cloudapps-configuration.png)
 
     !!! info "Configuration Use Cases"
         The configuration data enables use cases like:
@@ -91,7 +91,7 @@ For more details, see the <a href="https://docs.dynatrace.com/docs/platform-modu
     - Click on a resource with an alert to investigate the issue
     - Explore the **Events** tab to see the problem history
 
-    ![image](img/lab3-cloudapps-alertstatus.png)
+        ![image](img/lab3-cloudapps-alertstatus.png)
 
 !!! success "Checkpoint"
     Before proceeding to the next section, verify:

@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/5-ai-observability-lab.js"
-
 # Lab 5: AI Observability
 
 ## 5.1 Intro

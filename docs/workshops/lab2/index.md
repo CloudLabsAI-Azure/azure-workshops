@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/2-azure_lab.js"
-
 # Lab 2: Monitor Azure Cloud Resources
 
 ## 2.1 Intro

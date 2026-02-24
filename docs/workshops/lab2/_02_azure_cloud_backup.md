@@ -1,6 +1,3 @@
---8<-- "snippets/send-bizevent/2-azure_lab.js"
-
-
 # Azure Grail Workshop Lab 2 - Azure Cloud Observability
 
 ## 2.1 Intro

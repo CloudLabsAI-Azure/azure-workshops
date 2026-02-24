@@ -28,7 +28,7 @@ In this section, you will configure the CloudLabs sandbox environment.
     - **Timer** — Shows remaining time for your lab session (top right)
     - **Zoom** — Click the **A↑ : 100%** icon to adjust the guide text size
 
-    ![image](img/lab1-cloudlabs.png)
+        ![image](img/lab1-cloudlabs.png)
 
 1.  Click on `Azure Portal` shortcut on the desktop to navigate to <a href="https://portal.azure.com/" target="_blank"> Azure Portal site </a>
 
