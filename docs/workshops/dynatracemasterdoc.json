@@ -1,0 +1,164 @@
+[ {
+  "Name": "Dynatrace Workshop",
+  "Language": "English",
+  "Files": [
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/Prajwal5700/agentic-applications-for-unified-data-foundation-solution-accelerator/refs/heads/prod/Labs/dynatrace-gettingstarted.md",
+        "Order": 1
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/index.md",
+        "Order": 2
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/02_portal_prep.md",
+        "Order": 3
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/03_dynatrace_setup.md",
+        "Order": 4
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/04_collect_inputs.md",
+        "Order": 5
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/05_setup_workshop.md",
+        "Order": 6
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/06_deploy_oneagent.md",
+        "Order": 7
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab1/07_summary.md",
+        "Order": 8
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/index.md",
+        "Order": 9
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/02_azure_monitor_flow.md",
+        "Order": 10
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/03_clouds_app.md",
+        "Order": 11
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/04_log_analysis.md",
+        "Order": 12
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/05_compare_metrics.md",
+        "Order": 13
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/06_forecasting.md",
+        "Order": 14
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab2/07_summary.md",
+        "Order": 15
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/index.md",
+        "Order": 16
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/02_deploy_operator.md",
+        "Order": 17
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/03_deploy_app.md",
+        "Order": 18
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/04_cluster_health.md",
+        "Order": 19
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/05_resource_optimization.md",
+        "Order": 20
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/06_troubleshooting.md",
+        "Order": 21
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/07_security.md",
+        "Order": 22
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab3/08_summary.md",
+        "Order": 23
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab4/index.md",
+        "Order": 24
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab4/02_dashboards.md",
+        "Order": 25
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab4/03_notebooks.md",
+        "Order": 26
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab4/04_analyze_data.md",
+        "Order": 27
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab4/05_summary.md",
+        "Order": 28
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/index.md",
+        "Order": 29
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/02_ai_obs_app.md",
+        "Order": 30
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/03_service_health.md",
+        "Order": 31
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/04_cost_tokens.md",
+        "Order": 32
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/05_latency.md",
+        "Order": 33
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/06_traces.md",
+        "Order": 34
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab5/07_summary.md",
+        "Order": 35
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab6/index.md",
+        "Order": 36
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab6/02_environment_reminder.md",
+        "Order": 37
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab6/03_cleanup.md",
+        "Order": 38
+     },
+     {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/azure-workshops/refs/heads/main/docs/workshops/lab6/04_resources.md",
+        "Order": 39
+     }     
+  ]
+} 
+
+]
