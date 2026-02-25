@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/0-getting-started.js"
-
 # Azure Grail Workshop Lab 1 - Setup
 
 ## 1.1 Intro
@@ -38,10 +36,12 @@ This free Azure subscription will be available to you for the next 5 days or unt
 
 ### Tasks to complete this step
 
-1. To setup your workshop using free Azure Pass subscription, navigate to <a href="https://www.microsoftazurepass.com/" target="_blank">Microsoft's Azure Pass website</a>
+1. To setup your workshop using free Azure Pass subscription, navigate to <a href="https://www.microsoftazurepass.com/" target="_blank">Microsoft's Azure Pass website</a>.
+
 1.  Click on Start.
      ![image](img/setup-azure.png)
 1. Use a ***personal email address*** to signin or create a new Microsoft account email.
+
      ![image](img/azure-pass-signin.png)
 
     !!! tip 
@@ -62,9 +62,11 @@ For this workshop, we will set-up a free Dynatrace Azure SaaS tenant with an tem
 
 ### Tasks to complete this step
 
-1. Open up browser and go to Azure Portal - <a href="https://portal.azure.com/" target="_blank">https://portal.azure.com/ </a>
+1. Open up browser and go to Azure Portal - <a href="https://portal.azure.com/" target="_blank">https://portal.azure.com/ </a>.
+
     1.  Search for Marketplace from the top search bar     
         ![image](img/az-marketplace.png)
+  
     1.  Once in the Azure Marketplace, search for `Azure Native Dynatrace Service` click on tile when the search displays the results.
         ![image](img/ands.png)
     1.  From the drop-down under plan, select `Dynatrace for Azure Trial` and click on subscribe
@@ -193,10 +195,10 @@ Also, we'll setup a access token within your Dynatrace envrionment that will be 
 
 1.  Access the new UI with Grail
     1.  Open up browser and go to Azure Portal - <a href="https://portal.azure.com/" target="_blank">https://portal.azure.com/ </a>
-       - Search for Dynatrace azure resource `dt-trial` from the top search bar     
-         ![image](img/Lab0-Step4-ands-search.png)
-       - Click on Go to Dynatrace Link 
-         ![image](img/Lab0-Step5-ands-gotodt.png)
+        - Search for Dynatrace azure resource `dt-trial` from the top search bar     
+          ![image](img/Lab0-Step4-ands-search.png)
+        - Click on Go to Dynatrace Link 
+          ![image](img/Lab0-Step5-ands-gotodt.png)
 
     1. Login to Dynatrace    
     1.  On the Left menu, you'll notice a banner to access the new UI that was introduced with Grail.  
@@ -247,16 +249,16 @@ In the code repo you cloned, there is a simple UNIX shell script that prompts fo
     ./input-credentials.sh
     ```
    1. Enter in the approprite values for the three inputs at the prompt
-     ```
-      ==================================================================
-      Please enter your Dynatrace credentials as requested below: 
-      Press <enter> to keep the current value
-      ===================================================================
-      Dynatrace Base URL              (current: ) : 
-      Dynatrace Access API Token      (current: ) : 
-      Azure Subscription ID           (current: ) : 
-      ===================================================================
-     ```
+      ```
+        ==================================================================
+        Please enter your Dynatrace credentials as requested below: 
+        Press <enter> to keep the current value
+        ===================================================================
+        Dynatrace Base URL              (current: ) : 
+        Dynatrace Access API Token      (current: ) : 
+        Azure Subscription ID           (current: ) : 
+        ===================================================================
+      ```
    1. Confirm all of the inputs are correct. 
     ??? info
         📓 There are some derived values the script generated based on your input.  
@@ -354,39 +356,39 @@ In this step we will verify if all of the Azure resources were provisioned for t
 
   1. Run this command in Azure Cloud shell to get familiar with the command line options for kubectl.
 
-    ```
-    kubectl --help
-    ```
+      ```
+      kubectl --help
+      ```
 
   1. Configure kubectl to connect to the new cluster by downloading the cluster credentials. 
 
-    ```
-    az aks get-credentials --resource-group dynatrace-azure-grail-modernize --name dynatrace-azure-grail-cluster    
-    ```
+      ```
+      az aks get-credentials --resource-group dynatrace-azure-grail-modernize --name dynatrace-azure-grail-cluster    
+      ```
   1. Verify you are connected.  You should see `dynatrace-azure-grail-cluster` as the output.
 
-    ```
-    kubectl config current-context
-    ```
+      ```
+      kubectl config current-context
+      ```
 
   1. List the nodes in the cluster
 
-    ```
-    kubectl get nodes
-    ```
+      ```
+      kubectl get nodes
+      ```
 
-    The output should look like this:
+      The output should look like this:
 
-    ```
-    NAME                                STATUS   ROLES   AGE   VERSION
-    aks-nodepool1-74092643-vmss000000   Ready    agent   21h   v1.19.11
-    aks-nodepool1-74092643-vmss000001   Ready    agent   21h   v1.19.11
-    ```
+      ```
+      NAME                                STATUS   ROLES   AGE   VERSION
+      aks-nodepool1-74092643-vmss000000   Ready    agent   21h   v1.19.11
+      aks-nodepool1-74092643-vmss000001   Ready    agent   21h   v1.19.11
+      ```
 
-    You can see even more detail with this command.
+      You can see even more detail with this command.
 
-    ```
-    kubectl describe nodes
+      ```
+      kubectl describe nodes
 
 !!! tip "Kubectl Command Check" 
     📓 Ensure you're able to sucessfully run all of the `kubectl` commands above.  This ensures you can sucessfully connectivity to the AKS cluster, which is key in Lab2 when we deploy the sample application to the AKS cluster in Lab2, Step 5

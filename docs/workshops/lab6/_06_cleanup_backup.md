@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/cleanup.js"
-
 # Azure Grail Workshop Lab 6 - Cleanup & Reminder
 
 ## 6.1 Workshop Complete

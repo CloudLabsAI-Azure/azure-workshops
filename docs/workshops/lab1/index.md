@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/0-getting-started.js"
-
 # Lab 1: Setting up Environment
 
 ## 1.1 Intro

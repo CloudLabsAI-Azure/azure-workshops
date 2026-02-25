@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/5-ai-observability-lab.js"
-
 # Azure Grail Workshop Lab 5 - AI Observability
 
 ## 5.1 Intro
@@ -184,18 +182,18 @@ Token consumption directly impacts cost when using cloud-based LLM services. Und
 5. **(Optional)** Query token consumption with DQL
     - Add a DQL section in your notebook:
 
-    ```dql title="Token Consumption by Model"
-    fetch spans
-    | filter ai.technology.vendor == "openai"
-    | summarize
-        total_input_tokens = sum(ai.prompt_tokens),
-        total_output_tokens = sum(ai.completion_tokens),
-        total_tokens = sum(ai.total_tokens),
-        request_count = count(),
-        by: {ai.model.id}
-    | fieldsAdd avg_tokens_per_request = total_tokens / request_count
-    | sort total_tokens desc
-    ```
+        ```dql title="Token Consumption by Model"
+        fetch spans
+        | filter ai.technology.vendor == "openai"
+        | summarize
+            total_input_tokens = sum(ai.prompt_tokens),
+            total_output_tokens = sum(ai.completion_tokens),
+            total_tokens = sum(ai.total_tokens),
+            request_count = count(),
+            by: {ai.model.id}
+        | fieldsAdd avg_tokens_per_request = total_tokens / request_count
+        | sort total_tokens desc
+        ```
 
     !!! tip
         **Cost Optimization Tip:** If you notice high token usage on expensive models like GPT-4, consider whether those requests could be routed to GPT-3.5-turbo for simpler queries while reserving GPT-4 for complex reasoning tasks.
@@ -287,14 +285,14 @@ Distributed tracing provides deep visibility into individual AI requests, includ
 6. **(Optional)** Search traces with DQL
     - Query for specific traces based on criteria:
 
-    ```dql title="Find Slow AI Requests"
-    fetch spans
-    | filter ai.technology.vendor == "openai"
-    | filter duration > 5000000000  // > 5 seconds in nanoseconds
-    | fields timestamp, ai.model.id, ai.prompt_tokens, ai.completion_tokens, duration
-    | sort duration desc
-    | limit 20
-    ```
+        ```dql title="Find Slow AI Requests"
+        fetch spans
+        | filter ai.technology.vendor == "openai"
+        | filter duration > 5000000000  // > 5 seconds in nanoseconds
+        | fields timestamp, ai.model.id, ai.prompt_tokens, ai.completion_tokens, duration
+        | sort duration desc
+        | limit 20
+        ```
 
     ??? info
         ℹ️ Dynatrace captures prompts and responses for observability and compliance purposes. This provides a complete audit trail of AI interactions, which is essential for regulated industries and responsible AI governance.

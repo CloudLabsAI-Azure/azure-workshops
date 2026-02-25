@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/3-aks-lab.js"
-
 # Azure Grail Workshop Lab 3 - Modernization with AKS
 
 ## 3.1 Intro 
@@ -35,7 +33,7 @@ The picture below shows how the components of the sample application interact wi
 ??? info 
     📓 Beyond the Lab, over time, you can imagine that this sample application will be further changed to add in other technologies like Azures serverless and other PaaS services like Azures SQL or Cosmo DB databases and virtual networking Application gateways as shown in the picture below.
 
-    ![image](img/lab4-app-architecture-future.png)
+![image](img/lab4-app-architecture-future.png)
 
 ### Objectives of this Lab
 
@@ -102,7 +100,7 @@ Organizations will often customize the Dynatrace Operator installation and you c
       - `API URL`: URL value from notepad saved from earlier step
       - `OneAgent Deployment Type`: cloud native full stack
 
-   ![image](img/lab2-aks-dt-extension-install4.png)
+        ![image](img/lab2-aks-dt-extension-install4.png)
    
 1. Click on `Review + Create` and click `Create` on the next screen.
 1. After the deployment is complete, go into Dynatrace -> From the left menu select `Apps` and bring up `Kubernetes Classic` app.
@@ -336,27 +334,27 @@ Maximize your cluster resources and reduce costs by identifying and optimizing u
     - Create a new notebook
     - Add a DQL element and copy/paste the query below
 
-    ```dql title="Find workloads missing CPU/Memory requests"
-    fetch dt.entity.cloud_application, from: -30m | fields id, workload.name = entity.name, workload.type = arrayFirst(cloudApplicationDeploymentTypes), cluster.id = clustered_by[dt.entity.kubernetes_cluster], namespace.name = namespaceName
-    | lookup [
-    fetch dt.entity.kubernetes_cluster, from: -30m | fields id, cluster.name = entity.name, cluster.distribution = kubernetesDistribution, cluster.cluster_id = kubernetesClusterId | limit 20000
-    ], sourceField:cluster.id, lookupField:id, fields:{cluster.name}
-    | fieldsRemove cluster.id
-    | filterOut  namespace.name == "kube-system"
-    | lookup [
-    timeseries values = sum(dt.kubernetes.container.requests_CPU), by:{dt.entity.cloud_application}, from: -2m, filter: dt.kubernetes.container.type == "app"
-    | fieldsAdd requests_CPU = arrayFirst(values)
-    | limit 20000
-    ], sourceField:id, lookupField:dt.entity.cloud_application, fields:{requests_CPU}
-    | lookup [
-    timeseries values = sum(dt.kubernetes.container.requests_memory), by:{dt.entity.cloud_application}, from: -2m, filter: dt.kubernetes.container.type == "app"
-    | fieldsAdd requests_memory = arrayFirst(values)
-    | limit 20000
-    ], sourceField:id, lookupField:dt.entity.cloud_application, fields:{requests_memory}
-    | filter isNull(requests_CPU) or isNull(requests_memory)
-    ```
+        ```dql title="Find workloads missing CPU/Memory requests"
+        fetch dt.entity.cloud_application, from: -30m | fields id, workload.name = entity.name, workload.type = arrayFirst(cloudApplicationDeploymentTypes), cluster.id = clustered_by[dt.entity.kubernetes_cluster], namespace.name = namespaceName
+        | lookup [
+        fetch dt.entity.kubernetes_cluster, from: -30m | fields id, cluster.name = entity.name, cluster.distribution = kubernetesDistribution, cluster.cluster_id = kubernetesClusterId | limit 20000
+        ], sourceField:cluster.id, lookupField:id, fields:{cluster.name}
+        | fieldsRemove cluster.id
+        | filterOut  namespace.name == "kube-system"
+        | lookup [
+        timeseries values = sum(dt.kubernetes.container.requests_CPU), by:{dt.entity.cloud_application}, from: -2m, filter: dt.kubernetes.container.type == "app"
+        | fieldsAdd requests_CPU = arrayFirst(values)
+        | limit 20000
+        ], sourceField:id, lookupField:dt.entity.cloud_application, fields:{requests_CPU}
+        | lookup [
+        timeseries values = sum(dt.kubernetes.container.requests_memory), by:{dt.entity.cloud_application}, from: -2m, filter: dt.kubernetes.container.type == "app"
+        | fieldsAdd requests_memory = arrayFirst(values)
+        | limit 20000
+        ], sourceField:id, lookupField:dt.entity.cloud_application, fields:{requests_memory}
+        | filter isNull(requests_CPU) or isNull(requests_memory)
+        ```
 
-    ![image](img/akslevelup-lab1-k8app-notebook-limitsdql.gif)
+        ![image](img/akslevelup-lab1-k8app-notebook-limitsdql.gif)
 
 ## 3.7 Troubleshoot Workloads with Application Observability
 

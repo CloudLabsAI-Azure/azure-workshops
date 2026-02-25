@@ -1,5 +1,3 @@
---8<-- "snippets/send-bizevent/index.js"
-
 # **Welcome to Azure Workshops**
 
 This collection of Instructer-led labs and workshops is designed to guide you through common Azure services and development scenarios. Each module provides step-by-step instructions, code snippets, and verification checks.
@@ -41,9 +39,3 @@ If you need to redo a section or start over, you can reset your progress using t
 
 - **Reset Section Progress** — Clears the completion status for the current section only, allowing you to redo that specific part of the lab
 - **Reset All Progress** — Clears all completion status across all labs, resetting the entire workshop to the beginning
-
-Look for these buttons at the bottom of any lab section page.
-
-## **Get Started**
-
-[Start Lab 1 →](workshops/lab1/index.md){ .md-button .md-button--primary }

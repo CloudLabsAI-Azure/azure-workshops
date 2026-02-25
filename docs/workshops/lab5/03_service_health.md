@@ -26,19 +26,19 @@ Understanding service and model health is critical for maintaining reliable AI a
     - Open the Notebooks app and create a new notebook
     - Add a DQL section with the following query:
 
-    ```dql title="AI Service Health Summary"
-    fetch spans
-    | filter gen_ai.system == "openai
-    | summarize
-        total_requests = count(),
-        error_count = countIf(otel.status_code == "ERROR"),
-        avg_duration_ms = avg(duration) / 1000000,
-        by: {gen_ai.request.model}
-    | fieldsAdd error_rate = (error_count / total_requests) * 100
-    | sort total_requests desc
-    ```
+        ```dql title="AI Service Health Summary"
+        fetch spans
+        | filter gen_ai.system == "openai
+        | summarize
+            total_requests = count(),
+            error_count = countIf(otel.status_code == "ERROR"),
+            avg_duration_ms = avg(duration) / 1000000,
+            by: {gen_ai.request.model}
+        | fieldsAdd error_rate = (error_count / total_requests) * 100
+        | sort total_requests desc
+        ```
 
-    ![image](img/lab5-service-health-dql.png)
+        ![image](img/lab5-service-health-dql.png)
 
 4. Let's now go to the Explorer view and click on `open-ai-travel-advisor` service to look at some of the prompt traces to see what user are putting in prompt to ask our travel-advisor to do.
     ![image](img/lab5-prompt-trace.png)
